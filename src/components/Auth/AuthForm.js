@@ -10,7 +10,7 @@ const AuthForm = () => {
   const switchAuthModeHandler = () => {
     setIsLogin((prevState) => !prevState);
   };
-
+ 
   const submitHandler = (event) => {
     event.preventDefault();
   };
