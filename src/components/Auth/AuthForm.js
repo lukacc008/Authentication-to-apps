@@ -53,7 +53,7 @@ const AuthForm = () => {
     });    
   }
 };
-
+ 
 
   return (
     <section className={classes.auth}>
