@@ -22,7 +22,7 @@ const ProfileForm = () => {
         <button>Change Password</button>
       </div>
     </form>
-  );
+  ); 
 }
 
 export default ProfileForm;
