@@ -1,16 +1,31 @@
-import { useRef } from 'react';
+import { useRef, useContext } from 'react';
 
+import AuthContext from "../../store/auth-context"
 import classes from './ProfileForm.module.css';
 
 const ProfileForm = () => {
-
   const newPasswordInputRef = useRef();
+  const authCtx = useContext(AuthContext);
 
   const submitHandler = event => {
     event.preventDefault();
+
+    const enteredNewPassword = newPasswordInputRef.current.value;
+
+
+    fetch("https://identitytoolkit.googleapis.com/v1/accounts:update?key=AIzaSyB8Adpfdpzwd6yaV8wWFQdxPYOI4telEv4", {
+      method: "POST",
+      body: JSON.stringify({
+        idToken,
+        password,
+        returnSecureToken
+      }),
+      headers: {
+        "Content-Type": "application/json"
+      }
+    })
   };
 
-  const enteredNewPassword = newPasswordInputRef.current.value;
 
   return (
     <form className={classes.form} onStubmit={submitHandler}>
