@@ -9,7 +9,7 @@ const ProfileForm = () => {
 
   const submitHandler = event => {
     event.preventDefault();
-
+ 
     const enteredNewPassword = newPasswordInputRef.current.value;
 
 
