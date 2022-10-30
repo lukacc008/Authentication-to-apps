@@ -24,7 +24,7 @@ const ProfileForm = () => {
         "Content-Type": "application/json"
       }
     })
-  };
+  }; 
 
 
   return (
