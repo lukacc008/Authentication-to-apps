@@ -26,7 +26,7 @@ const ProfileForm = () => {
     }).then(res => {
       
 
-    });
+    }); 
   }; 
 
 
