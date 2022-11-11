@@ -22,7 +22,7 @@ export const AuthContextProvider = (props) => {
     setToken(null);
     localStorage.removeItem("toekn");
   };
-
+ 
   const contextValue = {
     token: token,
     isLoggedIn: userIsLoggedIn,
